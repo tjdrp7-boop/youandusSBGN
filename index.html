@@ -1,0 +1,1678 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YOUANDUS | 신세계백화점 강남 팝업</title>
+  <meta name="description" content="유앤어스 신세계백화점 강남 팝업. 온다 소파와 러블리데이 소파 계약 고객 대상 200만원 상당 카펫 선착순 증정.">
+  <meta property="og:title" content="YOUANDUS 신세계백화점 강남 팝업">
+  <meta property="og:description" content="하이엔드 소파와 카펫으로 완성하는 거실 제안.">
+  <meta property="og:image" content="./assets/option1/og-shinsegae-gangnam.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <style>
+    :root {
+      --ink: #151515;
+      --muted: #68635d;
+      --soft: #f6f2eb;
+      --stone: #e3ddd3;
+      --warm: #b09a7b;
+      --deep: #2b2925;
+      --paper: #fffdf8;
+      --line: rgba(21, 21, 21, 0.12);
+      --shadow: 0 22px 70px rgba(26, 22, 17, 0.14);
+      --sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: var(--sans);
+      line-height: 1.55;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid #c7a978;
+      outline-offset: 4px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    .mobile-only {
+      display: none !important;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .sticky-shell {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 10px 28px rgba(24, 21, 17, 0.08);
+    }
+
+    .top-note {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      min-height: 42px;
+      padding: 9px 18px;
+      color: #fff;
+      background: var(--deep);
+      font-size: 13px;
+      font-weight: 500;
+      text-align: center;
+      word-break: keep-all;
+    }
+
+    .top-note span {
+      color: #d7c6ad;
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .top-note .top-note-copy {
+      color: inherit;
+      font-size: inherit;
+      letter-spacing: normal;
+      text-transform: none;
+    }
+
+    .site-header {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 253, 248, 0.86);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .brand-logo {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      flex: 0 0 auto;
+    }
+
+    .youandus-logo {
+      width: 138px;
+    }
+
+    .shinsegae-logo {
+      width: 124px;
+    }
+
+    .brand-divider {
+      width: 1px;
+      height: 18px;
+      background: rgba(21, 21, 21, 0.22);
+      flex: 0 0 auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: #403d38;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .nav-cta,
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 20px;
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 650;
+      transition: transform 180ms ease, background 180ms ease, color 180ms ease, border-color 180ms ease;
+    }
+
+    .nav-cta:hover,
+    .button:hover {
+      transform: translateY(-1px);
+      border-color: #8f785d;
+      background: #8f785d;
+    }
+
+    .button.secondary {
+      color: var(--ink);
+      background: transparent;
+    }
+
+    .button.secondary:hover {
+      color: #fff;
+      background: var(--deep);
+      border-color: var(--deep);
+    }
+
+    .hero {
+      position: relative;
+      min-height: calc(100svh - 118px);
+      isolation: isolate;
+      display: flex;
+      align-items: stretch;
+      overflow: hidden;
+      background: #d9d1c5;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background: url("./assets/option1/hero-desktop.jpg") center / cover no-repeat;
+      transform: scale(1.02);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(90deg, rgba(18, 16, 14, 0.72), rgba(18, 16, 14, 0.34) 46%, rgba(18, 16, 14, 0.08)),
+        linear-gradient(0deg, rgba(18, 16, 14, 0.28), rgba(18, 16, 14, 0.04) 44%);
+    }
+
+    .hero .container {
+      display: flex;
+      align-items: center;
+      padding: 72px 0 92px;
+    }
+
+    .hero-copy {
+      width: min(660px, 100%);
+      max-width: 100%;
+      min-width: 0;
+      color: #fff;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 12px;
+      font-weight: 650;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.58);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: var(--sans);
+      font-size: 44px;
+      font-weight: 500;
+      line-height: 1.16;
+      letter-spacing: 0;
+      word-break: keep-all;
+    }
+
+    .hero-copy h1 strong {
+      display: block;
+      margin-top: 10px;
+      font-family: var(--sans);
+      font-size: 52px;
+      font-weight: 720;
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .hero-sub {
+      max-width: 540px;
+      margin: 28px 0 0;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 18px;
+      word-break: keep-all;
+    }
+
+    .hero-benefit {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 22px;
+      align-items: end;
+      max-width: 650px;
+      margin-top: 46px;
+      padding: 26px 0 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.26);
+    }
+
+    .hero-benefit .label {
+      display: block;
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.64);
+      font-size: 12px;
+      font-weight: 650;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .hero-benefit strong {
+      display: block;
+      font-size: 32px;
+      line-height: 1.25;
+      word-break: keep-all;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .hero-actions .button.secondary {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.68);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .hero-actions .button.secondary:hover {
+      border-color: #fff;
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    .section {
+      padding: 112px 0;
+    }
+
+    main > section[id] {
+      scroll-margin-top: 128px;
+    }
+
+    .section.compact {
+      padding: 82px 0;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(160px, 0.42fr) minmax(0, 1fr);
+      gap: 48px;
+      align-items: start;
+      margin-bottom: 52px;
+    }
+
+    .section-head > *,
+    .intro-grid > *,
+    .feature > *,
+    .gift-grid > *,
+    .reserve-layout > *,
+    .curation-item,
+    .product-card > *,
+    .reserve-box {
+      min-width: 0;
+    }
+
+    .section-kicker {
+      color: #9a8060;
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      margin: 0;
+      font-size: 52px;
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: 0;
+      word-break: keep-all;
+    }
+
+    .section-text {
+      max-width: 690px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+      word-break: keep-all;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 56px;
+      align-items: end;
+    }
+
+    .intro-image {
+      min-height: 620px;
+      background: url("./assets/option1/onda-lifestyle.jpg") center / cover no-repeat;
+    }
+
+    .intro-copy {
+      padding-bottom: 26px;
+    }
+
+    .quote {
+      margin: 0;
+      font-family: var(--sans);
+      font-size: 56px;
+      font-weight: 520;
+      line-height: 1.06;
+      letter-spacing: 0;
+    }
+
+    .intro-copy p {
+      margin: 28px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+      word-break: keep-all;
+    }
+
+    .curation {
+      background: #fff;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .curation-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .curation-item {
+      min-height: 230px;
+      padding: 34px;
+      border-right: 1px solid var(--line);
+    }
+
+    .curation-item:last-child {
+      border-right: 0;
+    }
+
+    .curation-num {
+      color: #9a8060;
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .curation-item h3 {
+      margin: 28px 0 14px;
+      font-size: 24px;
+      font-weight: 650;
+      line-height: 1.24;
+      letter-spacing: 0;
+      word-break: keep-all;
+    }
+
+    .curation-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      word-break: keep-all;
+    }
+
+    .signature {
+      background: var(--soft);
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(380px, 0.8fr);
+      gap: 58px;
+      align-items: center;
+      padding: 72px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .feature:first-of-type {
+      border-top: 0;
+      padding-top: 8px;
+    }
+
+    .feature:nth-of-type(even) {
+      grid-template-columns: minmax(380px, 0.8fr) minmax(0, 0.95fr);
+    }
+
+    .feature:nth-of-type(even) .feature-media {
+      order: 2;
+    }
+
+    .feature-media {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      min-height: 0;
+      overflow: hidden;
+      background: #ebe7df;
+      box-shadow: var(--shadow);
+    }
+
+    .feature-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .feature-copy {
+      padding: 30px 0;
+    }
+
+    .brandline {
+      color: #9a8060;
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .feature-title {
+      margin: 14px 0 16px;
+      font-family: var(--sans);
+      font-size: 82px;
+      font-weight: 520;
+      line-height: 0.95;
+      letter-spacing: 0;
+    }
+
+    .feature-type {
+      margin: 0 0 26px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .feature-desc {
+      max-width: 520px;
+      margin: 0;
+      color: #4e4944;
+      font-size: 17px;
+      word-break: keep-all;
+    }
+
+    .spec-list {
+      display: grid;
+      gap: 13px;
+      max-width: 520px;
+      margin-top: 34px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    .spec-row {
+      display: grid;
+      grid-template-columns: 118px 1fr;
+      gap: 16px;
+      color: #3f3b37;
+      font-size: 14px;
+    }
+
+    .spec-row span {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 750;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .gift {
+      color: #fff;
+      background: var(--deep);
+    }
+
+    .gift-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .gift h2 {
+      margin: 0;
+      font-size: 58px;
+      font-weight: 520;
+      line-height: 1.12;
+      letter-spacing: 0;
+      word-break: keep-all;
+    }
+
+    .gift p {
+      margin: 22px 0 0;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 17px;
+      word-break: keep-all;
+    }
+
+    .gift-panel {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1px;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .gift-detail {
+      display: grid;
+      gap: 18px;
+    }
+
+    .gift-showcase {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .gift-showcase figure {
+      margin: 0;
+      overflow: hidden;
+      background: #211f1c;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .gift-showcase img {
+      aspect-ratio: 4 / 3;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .gift-showcase figcaption {
+      padding: 12px 14px 14px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 12px;
+      font-weight: 650;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .gift .gift-note {
+      grid-column: 1 / -1;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.56);
+      font-size: 11px;
+      line-height: 1.5;
+    }
+
+    .gift-item {
+      min-height: 180px;
+      padding: 30px;
+      background: #34312c;
+    }
+
+    .gift-item strong {
+      display: block;
+      margin-bottom: 12px;
+      color: #dec9a8;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .gift-item span {
+      display: block;
+      font-size: 20px;
+      font-weight: 620;
+      line-height: 1.35;
+      word-break: keep-all;
+    }
+
+    .lineup-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .product-card {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      min-height: 100%;
+      border: 1px solid var(--line);
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .product-image {
+      aspect-ratio: 4 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fbfaf7;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-body {
+      display: grid;
+      gap: 12px;
+      padding: 22px;
+      border-top: 1px solid var(--line);
+    }
+
+    .product-brand {
+      color: #9a8060;
+      font-size: 11px;
+      font-weight: 750;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .product-name {
+      font-size: 22px;
+      font-weight: 650;
+      line-height: 1.16;
+      letter-spacing: 0;
+    }
+
+    .product-meta {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    .copy-sentence {
+      display: block;
+    }
+
+    .copy-sentence + .copy-sentence {
+      margin-top: 0.65em;
+    }
+
+    .reservation {
+      background: var(--paper);
+      border-top: 1px solid var(--line);
+    }
+
+    .reserve-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.82fr) minmax(360px, 0.78fr);
+      gap: 54px;
+      align-items: start;
+    }
+
+    .reserve-box {
+      max-width: 680px;
+    }
+
+    .reserve-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .detail-list {
+      display: grid;
+      gap: 18px;
+      margin: 42px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .detail-list li {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: #3f3b37;
+      font-size: 15px;
+    }
+
+    .detail-list strong {
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .location-map {
+      margin: 0;
+      padding: 14px;
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .location-map img {
+      border: 1px solid rgba(21, 21, 21, 0.08);
+    }
+
+    .location-map figcaption {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    footer {
+      padding: 50px 0 64px;
+      color: rgba(255, 255, 255, 0.62);
+      background: #151515;
+      font-size: 13px;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 28px;
+      align-items: flex-start;
+    }
+
+    .footer-logo {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 750;
+      letter-spacing: 0.16em;
+    }
+
+    .footer-logo img {
+      width: 150px;
+      height: auto;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .floating {
+      position: fixed;
+      right: 24px;
+      bottom: 18px;
+      z-index: 40;
+      display: flex;
+      align-items: center;
+      width: auto;
+      padding: 0;
+      color: #fff;
+      transform: translateY(110px);
+      transition: transform 220ms ease;
+    }
+
+    .floating.show {
+      transform: translateY(0);
+    }
+
+    .floating p {
+      display: none;
+    }
+
+    .floating .button {
+      min-height: 52px;
+      padding: 0 28px;
+      white-space: nowrap;
+      border-color: var(--ink);
+      background: var(--ink);
+      color: #fff;
+      box-shadow: 0 16px 50px rgba(0, 0, 0, 0.22);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .nav-links a:not(.nav-cta) {
+        display: none;
+      }
+
+      .section {
+        padding: 84px 0;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      .hero-copy h1 strong {
+        font-size: 40px;
+      }
+
+      .section-title {
+        font-size: 42px;
+      }
+
+      .quote {
+        font-size: 42px;
+      }
+
+      .feature-title {
+        font-size: 64px;
+      }
+
+      .gift h2 {
+        font-size: 42px;
+      }
+
+      .section-head,
+      .intro-grid,
+      .feature,
+      .feature:nth-of-type(even),
+      .gift-grid,
+      .reserve-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .curation-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .curation-item {
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .curation-item:last-child {
+        border-bottom: 0;
+      }
+
+      .feature:nth-of-type(even) .feature-media {
+        order: 0;
+      }
+
+      .lineup-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .intro-image,
+      .feature-media {
+        min-height: 430px;
+      }
+
+      .reservation {
+        background: var(--paper);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .desktop-only {
+        display: none !important;
+      }
+
+      .mobile-only {
+        display: block !important;
+      }
+
+      .container {
+        width: calc(100% - 32px);
+        max-width: calc(100% - 32px);
+      }
+
+      .top-note {
+        display: none;
+      }
+
+      .nav {
+        min-height: 62px;
+      }
+
+      .brand {
+        gap: 10px;
+      }
+
+      .youandus-logo {
+        width: 118px;
+      }
+
+      .shinsegae-logo {
+        width: 100px;
+      }
+
+      .brand-divider {
+        height: 16px;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .hero {
+        min-height: 650px;
+      }
+
+      .hero::before {
+        background: url("./assets/option1/hero-mobile.jpg") center top / cover no-repeat;
+      }
+
+      .hero::after {
+        background:
+          linear-gradient(180deg, rgba(18, 16, 14, 0.82), rgba(18, 16, 14, 0.54) 56%, rgba(18, 16, 14, 0.18)),
+          linear-gradient(90deg, rgba(18, 16, 14, 0.7), rgba(18, 16, 14, 0.18));
+      }
+
+      .hero .container {
+        align-items: flex-start;
+        padding-top: 48px;
+        padding-bottom: 76px;
+      }
+
+      .eyebrow {
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 18px;
+        font-size: 10px;
+      }
+
+      .eyebrow::before {
+        width: 24px;
+        margin-top: 8px;
+      }
+
+      h1 {
+        font-size: 30px;
+        line-height: 1.08;
+      }
+
+      .hero-copy h1 strong {
+        margin-top: 8px;
+        font-size: 32px;
+        line-height: 1.14;
+      }
+
+      .hero-sub {
+        margin-top: 18px;
+        font-size: 15px;
+        width: 100%;
+        max-width: 330px;
+      }
+
+      .hero-copy,
+      .intro-copy,
+      .reserve-box,
+      .section-text,
+      .intro-copy p,
+      .feature-desc,
+      .gift p,
+      .curation-item p {
+        max-width: 100%;
+      }
+
+      .hero-benefit {
+        grid-template-columns: 1fr;
+        margin-top: 28px;
+        padding-top: 22px;
+      }
+
+      .hero-benefit strong {
+        font-size: 23px;
+      }
+
+      .hero-actions,
+      .reserve-actions {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .button {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .hero-sub,
+      .hero-benefit strong,
+      .section-title,
+      .section-text,
+      .quote,
+      .intro-copy p,
+      .feature-desc,
+      .gift p,
+      .curation-item h3,
+      .curation-item p {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+
+      .hero-actions .button.secondary {
+        display: none;
+      }
+
+      .section-head {
+        gap: 18px;
+        margin-bottom: 36px;
+      }
+
+      .intro-copy,
+      .section-head > div,
+      .feature-copy,
+      .reserve-box {
+        display: grid;
+        justify-items: start;
+      }
+
+      .section {
+        padding: 68px 0;
+      }
+
+      main > section[id] {
+        scroll-margin-top: 78px;
+      }
+
+      .section.compact {
+        padding: 58px 0;
+      }
+
+      .section-title,
+      .quote {
+        font-size: 31px;
+        max-width: 330px;
+      }
+
+      .section-text,
+      .intro-copy p,
+      .feature-desc,
+      .gift p {
+        font-size: 16px;
+        max-width: 330px;
+      }
+
+      .intro-image {
+        min-height: 300px;
+      }
+
+      .intro-copy > p:not(.quote) {
+        display: none;
+      }
+
+      .feature-media {
+        min-height: 0;
+      }
+
+      .feature {
+        gap: 28px;
+        padding: 52px 0;
+      }
+
+      .curation-item {
+        min-height: 118px;
+        padding: 18px 10px;
+        border-right: 1px solid var(--line);
+        border-bottom: 0;
+      }
+
+      .curation-item h3 {
+        margin: 18px 0 0;
+        font-size: 16px;
+        line-height: 1.3;
+      }
+
+      .curation-item p {
+        display: none;
+      }
+
+      .curation-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .curation-num {
+        font-size: 10px;
+        letter-spacing: 0.08em;
+      }
+
+      .feature-title {
+        font-size: 46px;
+      }
+
+      .feature-copy {
+        padding: 12px 0 0;
+      }
+
+      .feature-type {
+        margin-bottom: 18px;
+        font-size: 15px;
+      }
+
+      .spec-list {
+        margin-top: 20px;
+        padding-top: 18px;
+      }
+
+      .spec-row:not(:nth-child(3)) {
+        display: none;
+      }
+
+      .gift h2 {
+        max-width: 100%;
+        font-size: clamp(23px, 7.2vw, 28px);
+        line-height: 1.22;
+      }
+
+      .gift-title-line {
+        display: block;
+        white-space: nowrap;
+      }
+
+      .gift-item {
+        min-height: auto;
+        padding: 24px;
+      }
+
+      .gift-item span {
+        font-size: 18px;
+      }
+
+      .gift-detail {
+        gap: 12px;
+      }
+
+      .gift-item.redundant-mobile {
+        display: none;
+      }
+
+      .gift-panel,
+      .gift-showcase {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .gift-showcase {
+        gap: 8px;
+      }
+
+      .gift-showcase figcaption {
+        padding: 9px 10px 11px;
+        font-size: 10px;
+      }
+
+      .spec-row,
+      .detail-list li {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+
+      .lineup-grid {
+        display: flex;
+        gap: 10px;
+        margin-right: -16px;
+        padding: 0 16px 12px 0;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+      }
+
+      .lineup-grid::-webkit-scrollbar {
+        display: none;
+      }
+
+      .product-card {
+        flex: 0 0 86%;
+        max-width: 310px;
+        scroll-snap-align: start;
+      }
+
+      .product-body {
+        gap: 8px;
+        padding: 16px;
+      }
+
+      .detail-list {
+        margin-top: 30px;
+      }
+
+      .detail-list .optional-mobile {
+        display: none;
+      }
+
+      .footer-grid {
+        flex-direction: column;
+      }
+
+      .floating {
+        display: none;
+      }
+    }
+
+    @media (max-width: 380px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .hero-copy h1 strong {
+        font-size: 28px;
+      }
+
+      .hero-benefit strong {
+        font-size: 22px;
+      }
+
+      .shinsegae-logo,
+      .brand-divider {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sticky-shell">
+    <div class="top-note">
+      <span class="top-note-label">Shinsegae Gangnam Pop-up</span>
+      <span class="top-note-copy desktop-only">ONDA · LOVELY DAY 소파 계약 시 200만원 상당 카펫 선착순 증정</span>
+      <span class="top-note-copy mobile-only">ONDA · LOVELY DAY 소파 계약 시 200만원 상당 카펫 선착순 증정</span>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand brand-lockup" href="#top" aria-label="YOUANDUS and SHINSEGAE">
+          <img class="brand-logo youandus-logo" src="./assets/option1/logo/youandus-b.svg" alt="YOUANDUS">
+          <span class="brand-divider" aria-hidden="true"></span>
+          <img class="brand-logo shinsegae-logo" src="./assets/option1/logo/shinsegae-b.svg" alt="SHINSEGAE">
+        </a>
+        <nav class="nav-links" aria-label="주요 메뉴">
+          <a href="#signature">키 아이템</a>
+          <a href="#gift">계약 혜택</a>
+          <a href="#lineup">라인업</a>
+          <a class="nav-cta" href="#reserve">상담 예약</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <main id="top">
+    <section class="hero" aria-label="신세계 강남 팝업">
+      <div class="container">
+        <div class="hero-copy">
+          <div class="eyebrow">YOUANDUS at Shinsegae Gangnam</div>
+          <h1>신세계 강남점 팝업 기념,<strong>이사·입주 고객 특별 프로모션</strong></h1>
+          <p class="hero-sub desktop-only">
+            래미안 트리니원, 디에이치 방배를 비롯한 이사·입주 예정인 전 고객 대상으로,
+            유앤어스가 소파와 카펫을 함께 경험할 수 있는 프로모션을 만나보세요.
+          </p>
+          <p class="hero-sub mobile-only">래미안 트리니원, 디에이치 방배를 비롯한 이사·입주 예정인 전 고객 대상으로, 유앤어스가 소파와 카펫을 함께 경험할 수 있는 프로모션을 만나보세요.</p>
+          <div class="hero-benefit">
+            <div>
+              <span class="label">Sofa Contract Benefit</span>
+              <strong class="desktop-only">ONDA · LOVELY DAY 소파 계약 시<br>200만원 상당 카펫 선착순 증정</strong>
+              <strong class="mobile-only">ONDA · LOVELY DAY 소파 계약 시<br>200만원 상당 카펫 선착순 증정</strong>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a class="button" href="https://tally.so/r/yPkVkd" target="_blank" rel="noopener noreferrer">방문 예약하기</a>
+            <a class="button secondary" href="#signature">키 아이템 보기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container intro-grid">
+        <div class="intro-image" role="img" aria-label="하이엔드 거실 인테리어"></div>
+        <div class="intro-copy">
+          <div class="section-kicker">Curated Living Solutions</div>
+          <p class="quote">이사·입주 준비, 소파와 카펫을 한 번에</p>
+          <p>
+            거실의 중심이 되는 소파를 선택하고, 공간의 분위기를 완성하는 유앤어스 카펫 증정 혜택까지 함께 받아보실 수 있습니다.
+            유앤어스 학동역 쇼룸에서 직접 제품을 보고 상담받으시면서, 우리 집에 알맞은 구성과 조합을 확인해보세요.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact curation" aria-label="상담 방식">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Concierge Flow</div>
+          <div>
+            <h2 class="section-title">
+              <span class="desktop-only">실제 공간에 맞는 소파 선택부터 카펫 매칭까지, 한 번에 상담해드립니다.</span>
+              <span class="mobile-only">실제 공간에 맞는 소파 선택부터 카펫 매칭까지, 한 번에 상담해드립니다.</span>
+            </h2>
+            <p class="section-text desktop-only">
+              신세계 강남점 팝업에 앞서, 이사·입주 고객을 위한 특별 프로모션을 미리 만나보세요.
+              유앤어스 학동역 쇼룸에서는 공간의 크기와 동선, 소재와 컬러를 고려한 맞춤 컨설팅은 물론,
+              적용 가능한 프로모션 혜택까지 함께 안내해 드립니다.
+            </p>
+          </div>
+        </div>
+        <div class="curation-grid">
+          <div class="curation-item">
+            <div class="curation-num">01 Layout</div>
+            <h3><span class="desktop-only">거실 공간에 최적화된 소파 상담</span><span class="mobile-only">거실 공간에 최적화된 소파 상담</span></h3>
+            <p>공간의 크기와 구조, 동선, 주요 가구의 배치를 종합적으로 고려하여 가장 균형감 있는 소파 구성과 사이즈를 제안합니다.</p>
+          </div>
+          <div class="curation-item">
+            <div class="curation-num">02 Material</div>
+            <h3><span class="desktop-only">소재와 컬러 큐레이션</span><span class="mobile-only">소재와 컬러 큐레이션</span></h3>
+            <p>공간의 채광과 바닥재 톤에 맞춰 다양한 패브릭, 가죽, 우드 옵션을 제공합니다.</p>
+          </div>
+          <div class="curation-item">
+            <div class="curation-num">03 Styling</div>
+            <h3><span class="desktop-only">거실을 완성하는 카펫 제안</span><span class="mobile-only">거실을 완성하는 카펫 제안</span></h3>
+            <p>소파와 가장 조화로운 카펫을 제안하고, 프로모션 혜택까지 함께 안내해 드립니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section signature" id="signature">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Signature Sofas</div>
+          <div>
+            <h2 class="section-title">
+              <span class="desktop-only">이번 팝업을 대표하는 두 가지 컬렉션</span>
+              <span class="mobile-only">이번 팝업을 대표하는 두 가지 컬렉션</span>
+            </h2>
+            <p class="section-text desktop-only">
+              독일 가구 브랜드 롤프벤츠(Rolf Benz) 온다(ONDA)와 이탈리아 가구 브랜드 데지레(Desirée) 러블리 데이(LOVELY DAY)를 중심으로,
+              거실 레이아웃에 맞는 소파 구성과 카펫의 조합을 제안합니다.
+            </p>
+          </div>
+        </div>
+
+        <article class="feature">
+          <div class="feature-media">
+            <img src="./assets/option1/onda-lifestyle.jpg" alt="Rolf Benz ONDA 코너 소파가 배치된 거실" loading="lazy" decoding="async">
+          </div>
+          <div class="feature-copy">
+            <div class="brandline">ROLF BENZ</div>
+            <h3 class="feature-title">ONDA</h3>
+            <p class="feature-type">Corner sofa</p>
+            <p class="feature-desc desktop-only">
+              <span class="copy-sentence">온다 소파는 부드러운 곡선 디자인이 매력적인 롤프벤츠의 베스트셀러 제품입니다.</span>
+              <span class="copy-sentence">포켓스프링이 내장된 스트럭쳐와 롤프벤츠만의 독창적인 ‘샌드위치 컨스트럭션’ 폼을 사용해 편안한 착석감과 높은 내구성을 자랑합니다.</span>
+            </p>
+            <p class="feature-desc mobile-only">
+              <span class="copy-sentence">온다 소파는 부드러운 곡선 디자인이 매력적인 롤프벤츠의 베스트셀러 제품입니다.</span>
+              <span class="copy-sentence">포켓스프링이 내장된 스트럭쳐와 롤프벤츠만의 독창적인 ‘샌드위치 컨스트럭션’ 폼을 사용해 편안한 착석감과 높은 내구성을 자랑합니다.</span>
+            </p>
+            <div class="spec-list" aria-label="ONDA 제품 정보">
+              <div class="spec-row"><span>Brand</span> Rolf Benz</div>
+              <div class="spec-row"><span>Type</span> Corner sofa</div>
+              <div class="spec-row"><span>Size</span> W3600 D1730 H910 / W3170 D1730 H910</div>
+              <div class="spec-row"><span>Material</span> Fabric, wood leg in black oak</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="feature-media">
+            <img src="./assets/option1/lovely-day-lifestyle.jpg" alt="Desiree Lovely Day 소파가 배치된 거실" loading="lazy" decoding="async">
+          </div>
+          <div class="feature-copy">
+            <div class="brandline">DESIREE</div>
+            <h3 class="feature-title">Lovely Day</h3>
+            <p class="feature-type">Large sofa · Medium sofa</p>
+            <p class="feature-desc desktop-only">
+              <span class="copy-sentence">러블리데이 소파는 가볍게 떠 있는 듯한 하부 구조와 자유롭게 이동 가능한 백 쿠션이 특징입니다.</span>
+              <span class="copy-sentence">소파의 방향성과 사용 방식을 고정하지 않고, 라운지처럼 유연하게 쓰고 싶은 공간에 추천합니다.</span>
+            </p>
+            <p class="feature-desc mobile-only">
+              <span class="copy-sentence">러블리데이 소파는 가볍게 떠 있는 듯한 하부 구조와 자유롭게 이동 가능한 백 쿠션이 특징입니다.</span>
+              <span class="copy-sentence">소파의 방향성과 사용 방식을 고정하지 않고, 라운지처럼 유연하게 쓰고 싶은 공간에 추천합니다.</span>
+            </p>
+            <div class="spec-list" aria-label="Lovely Day 제품 정보">
+              <div class="spec-row"><span>Brand</span> Desiree</div>
+              <div class="spec-row"><span>Type</span> Large sofa / Medium sofa</div>
+              <div class="spec-row"><span>Size</span> W2500 D1250 H430 / W2200 D1050 H430</div>
+              <div class="spec-row"><span>Material</span> Leather body, fabric back cushion, metal black leg</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gift" id="gift">
+      <div class="container gift-grid">
+        <div>
+          <div class="section-kicker">Sofa Contract Benefit</div>
+          <h2><span class="desktop-only">ONDA 또는 LOVELY DAY 소파 계약 시, 200만원 상당 유앤어스 카펫 증정</span><span class="mobile-only"><span class="gift-title-line">ONDA 또는 LOVELY DAY</span><span class="gift-title-line">소파 계약 시, 200만원 상당</span><span class="gift-title-line">유앤어스 카펫 증정</span></span></h2>
+          <p class="desktop-only">
+            이사·입주를 준비하시는 고객님이라면, 소파와 카펫을 함께 준비할 수 있는 좋은 기회입니다.
+            증정되는 카펫은 3000 × 2000mm 사이즈로 제공되며, 모델별 5개씩, 총 10개 한정으로 운영됩니다.
+            선착순 마감이므로, 상담을 통해 자세한 내용을 확인해 보세요. 프로모션은 7/1부터 적용 가능하며,
+            신세계 강남점 팝업은 8/28부터 만나보실 수 있습니다.
+          </p>
+          <p class="mobile-only">
+            이사·입주를 준비하시는 고객님이라면, 소파와 카펫을 함께 준비할 수 있는 좋은 기회입니다.
+            <br><br>
+            증정되는 카펫은 3000 × 2000mm 사이즈로 제공되며, 모델별 5개씩, 총 10개 한정으로 운영됩니다.
+            선착순 마감이므로, 상담을 통해 자세한 내용을 확인해 보세요.
+            <br><br>
+            프로모션은 7/1부터 적용 가능하며,
+            신세계 강남점 팝업은 8/28부터 만나보실 수 있습니다.
+          </p>
+        </div>
+        <div class="gift-detail">
+          <div class="gift-showcase" aria-label="증정 카펫 이미지">
+            <figure>
+              <img src="./assets/option1/gift-carpet-main-1.jpg" alt="레드 라인 러그" loading="lazy" decoding="async">
+              <figcaption>YOUANDUS LINE RUG #1</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/option1/gift-carpet-main-2.jpg" alt="오렌지 라인 러그" loading="lazy" decoding="async">
+              <figcaption>YOUANDUS LINE RUG #2</figcaption>
+            </figure>
+            <p class="gift-note">※ 이미지는 이해를 돕기 위한 예시이며, 실제 제공되는 카펫과 상이할 수 있습니다.</p>
+          </div>
+          <div class="gift-panel" aria-label="계약 혜택 요약">
+            <div class="gift-item redundant-mobile">
+              <strong>Item 01</strong>
+              <span>ONDA 소파 계약 시, 200만원 상당 유앤어스 카펫 증정</span>
+            </div>
+            <div class="gift-item redundant-mobile">
+              <strong>Item 02</strong>
+              <span>LOVELY DAY 소파 계약 시, 200만원 상당 유앤어스 카펫 증정</span>
+            </div>
+            <div class="gift-item">
+              <strong>Limited</strong>
+              <span>모델별 5개씩, 총 10개 한정 수량</span>
+            </div>
+            <div class="gift-item">
+              <strong>For Move-in</strong>
+              <span>이사·입주 예정 고객 대상</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="lineup">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Pop-up Lineup</div>
+          <div>
+            <h2 class="section-title"><span class="desktop-only">팝업에서 함께 만나는 하이엔드 리빙 컬렉션</span><span class="mobile-only">팝업에서 함께 만나는 하이엔드 리빙 컬렉션</span></h2>
+            <p class="section-text desktop-only">
+              소파를 비롯해 커피 테이블, 다이닝 테이블, 체어까지. 거실과 다이닝을 완성하는 다양한 하이엔드 컬렉션을 한자리에서 경험하고 상담받으실 수 있습니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="lineup-grid">
+          <article class="product-card">
+            <div class="product-image"><img src="./assets/option1/plura.jpg" alt="Plura sofa" loading="lazy" decoding="async"></div>
+            <div class="product-body">
+              <div class="product-brand">Rolf Benz</div>
+              <div class="product-name">PLURA SOFA</div>
+              <div class="product-meta"><span class="copy-sentence">원하는 자세에 맞춰 자유롭게 변하는 다기능 소파.</span><span class="copy-sentence">유압식 리클라이너와 기능성 관절을 적용해 하이백 체어부터 라운지 체어까지 다양한 형태로 변형되며, 상황에 맞는 최적의 편안함을 제공합니다.</span></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><img src="./assets/option1/kio.jpg" alt="Kio coffee table" loading="lazy" decoding="async"></div>
+            <div class="product-body">
+              <div class="product-brand">Rolf Benz</div>
+              <div class="product-name">KIO COFFEE TABLE</div>
+              <div class="product-meta"><span class="copy-sentence">물결처럼 은은하게 빛나는 몰튼 글라스 상판이 매력적인 커피 테이블.</span><span class="copy-sentence">슬림한 스틸 프레임과 조화를 이루며, 단독으로는 물론 여러 개를 함께 배치해 더욱 입체적인 공간을 연출할 수 있습니다.</span></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><img src="./assets/option1/imae.jpg" alt="Imae coffee table" loading="lazy" decoding="async"></div>
+            <div class="product-body">
+              <div class="product-brand">Desiree</div>
+              <div class="product-name">IMAE COFFEE TABLE</div>
+              <div class="product-meta"><span class="copy-sentence">자연석의 아름다움을 담은 대리석 커피 테이블.</span><span class="copy-sentence">결이 살아있는 대리석 상판과 안정감 있는 낮고 넓은 베이스가 조화를 이루며, 공간에 차분하고 깊이 있는 분위기를 더합니다.</span></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><img src="./assets/option1/materic-ovale.jpg" alt="Materic Ovale dining table" loading="lazy" decoding="async"></div>
+            <div class="product-body">
+              <div class="product-brand">Porro</div>
+              <div class="product-name">MATERIC OVALE TABLE</div>
+              <div class="product-meta"><span class="copy-sentence">타원형 상판과 원뿔형 베이스가 조화를 이루는 오벌 테이블.</span><span class="copy-sentence">안정적인 비례감을 이루는 실루엣과 자연스러운 우드 마감이 공간에 따뜻하고 우아한 분위기를 더합니다.</span></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><img src="./assets/option1/957.jpg" alt="957 extension table" loading="lazy" decoding="async"></div>
+            <div class="product-body">
+              <div class="product-brand">Rolf Benz</div>
+              <div class="product-name">957 TABLE</div>
+              <div class="product-meta"><span class="copy-sentence">익스텐션 기능을 갖춘 다이닝 테이블.</span><span class="copy-sentence">50cm 또는 100cm까지 확장 가능한 더블 익스텐션 시스템으로 다양한 공간과 인원에 유연하게 대응할 수 있습니다.</span></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><img src="./assets/option1/neve.jpg" alt="Neve chair" loading="lazy" decoding="async"></div>
+            <div class="product-body">
+              <div class="product-brand">Porro</div>
+              <div class="product-name">NEVE CHAIR</div>
+              <div class="product-meta"><span class="copy-sentence">클래식한 원목 의자를 현대적으로 재해석한 체어.</span><span class="copy-sentence">정제된 프레임과 부드러운 곡선이 조화를 이루며, 곡면 등받이와 좌판이 편안한 착석감을 제공합니다.</span></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><img src="./assets/option1/voyage.jpg" alt="Voyage chair" loading="lazy" decoding="async"></div>
+            <div class="product-body">
+              <div class="product-brand">Porro</div>
+              <div class="product-name">VOYAGE CHAIR</div>
+              <div class="product-meta"><span class="copy-sentence">구조미가 돋보이는 체어.</span><span class="copy-sentence">원목 프레임과 새들 레더를 결합한 구조로 뛰어난 안정감을 제공하며, 외부로 드러난 프레임 자체가 조형적인 디자인 요소가 됩니다.</span></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image"><img src="./assets/option1/romby.jpg" alt="Romby chair" loading="lazy" decoding="async"></div>
+            <div class="product-body">
+              <div class="product-brand">Porro</div>
+              <div class="product-name">ROMBY CHAIR</div>
+              <div class="product-meta"><span class="copy-sentence">할리우드 배우 기네스 팰트로가 선택한 아이코닉 체어.</span><span class="copy-sentence">원뿔형 베이스가 만드는 독특한 실루엣과 360° 회전 기능을 갖춘 Porro의 대표 디자인입니다.</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reservation" id="reserve">
+      <div class="container reserve-layout">
+        <div class="reserve-box">
+          <div class="section-kicker">Private Concierge</div>
+          <h2 class="section-title"><span class="desktop-only">팝업 오픈 전부터 학동역 쇼룸에서 상담받고, 프로모션 혜택까지 먼저 만나보세요.</span><span class="mobile-only">팝업 오픈 전부터 학동역 쇼룸에서 상담받고, 프로모션 혜택까지 먼저 만나보세요.</span></h2>
+          <p class="section-text desktop-only">
+            이사·입주 일정에 맞춰 소파와 카펫 혜택을 함께 상담해보세요. 제품 구성부터 소재 선택, 예상 배송 일정까지 순차적으로 안내해드립니다.
+          </p>
+          <div class="reserve-actions">
+            <a class="button" href="https://tally.so/r/yPkVkd" target="_blank" rel="noopener noreferrer">방문 예약하기</a>
+            <a class="button secondary" href="tel:0263356313">전화 상담</a>
+          </div>
+          <ul class="detail-list">
+            <li><strong>팝업 위치</strong> 신세계백화점 강남점 9층 리빙관</li>
+            <li><strong>팝업 기간</strong> 2026년 8월 28일(금) - 9월 17일(목)</li>
+            <li class="optional-mobile"><strong>프로모션 기간</strong> 2026년 7월 1일(수) - 9월 17일(목)</li>
+            <li><strong>팝업 운영 시간</strong> 월-목 10:30-20:00 / 금-일 10:30-20:30</li>
+            <li class="optional-mobile"><strong>대상</strong> 이사·입주 예정 고객</li>
+            <li><strong>문의</strong> 02-6335-6313</li>
+          </ul>
+        </div>
+        <figure class="location-map">
+          <img src="./assets/option1/location-9f.png" alt="신세계백화점 강남점 9층 리빙관 팝업 위치 안내" loading="lazy" decoding="async">
+          <figcaption>신세계백화점 강남점 9층 리빙관 팝업 위치</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-logo"><img src="./assets/option1/logo/youandus-w.svg" alt="YOUANDUS"></div>
+        <p>유앤어스 학동역 쇼룸: 서울시 강남구 학동로 226</p>
+        <p>marketing@youandus.co.kr · 02-547-8009</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/youandus_official/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://blog.naver.com/youandus_official" target="_blank" rel="noopener noreferrer">Blog</a>
+        <a href="https://youandus.co.kr/" target="_blank" rel="noopener noreferrer">Website</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating" id="floatingBar" aria-label="상담 안내">
+    <p><strong>ONDA · LOVELY DAY</strong> 소파 계약 시 카펫 선착순 증정</p>
+    <a class="button" href="https://tally.so/r/yPkVkd" target="_blank" rel="noopener noreferrer">방문 예약</a>
+  </div>
+
+  <script>
+    const floatingBar = document.getElementById("floatingBar");
+    const hero = document.querySelector(".hero");
+
+    function syncFloatingBar() {
+      if (!floatingBar || !hero) return;
+      const showAt = hero.offsetTop + hero.offsetHeight * 0.72;
+      floatingBar.classList.toggle("show", window.scrollY > showAt);
+    }
+
+    window.addEventListener("scroll", syncFloatingBar, { passive: true });
+    window.addEventListener("resize", syncFloatingBar);
+    syncFloatingBar();
+  </script>
+</body>
+</html>
